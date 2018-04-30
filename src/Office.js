@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 
+// Action url: https://onenote.officeapps-df.live.com/hosting/discovery
 const VIEW_ACTION = 'https://word-view.officeapps-df.live.com/wv/wordviewerframe.aspx?<ui=UI_LLCC&><rs=DC_LLCC&><dchat=DISABLE_CHAT&><hid=HOST_SESSION_ID&><showpagestats=PERFSTATS&><IsLicensedUser=BUSINESS_USER&><actnavid=ACTIVITY_NAVIGATION_ID&>';
 const EDIT_ACTION = 'https://word-edit.officeapps-df.live.com/we/wordeditorframe.aspx?<ui=UI_LLCC&><rs=DC_LLCC&><dchat=DISABLE_CHAT&><hid=HOST_SESSION_ID&><showpagestats=PERFSTATS&><IsLicensedUser=BUSINESS_USER&><actnavid=ACTIVITY_NAVIGATION_ID&>';
 const OFFICE_ONLINE_ACTION_URL = "wait";
