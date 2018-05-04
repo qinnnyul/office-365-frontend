@@ -1,6 +1,9 @@
 import React from 'react';
+import { Row, Col, Button } from 'antd';
+import { Link } from 'react-router-dom';
 
 import CheckTable from '../../components/CheckTable/CheckTable';
+import FilterSelect from '../../components/FilterSelect/FilterSelect';
 
 const data = [
   {
@@ -34,6 +37,54 @@ const data = [
 
 export default () => (
   <div>
-    <CheckTable data={data} />
+    <Row>
+      <Col span={24}>
+        <FilterSelect
+          label="条线筛选"
+          options={[
+            {
+              value: 'xxx1',
+              text: 'xxx',
+            },
+            {
+              value: 'xxx2',
+              text: 'xxx',
+            },
+            {
+              value: 'xxx3',
+              text: 'xxx',
+            },
+          ]}
+        />
+
+        <FilterSelect
+          label="人员筛选"
+          defaultValue="XXX"
+          options={[
+            {
+              value: 'xxx1',
+              text: 'XXX',
+            },
+            {
+              value: 'xxx2',
+              text: 'YYY',
+            },
+            {
+              value: 'xxx3',
+              text: 'ZZZ',
+            },
+          ]}
+        />
+
+        <Button type="primary">
+          <Link to="/edit">新建审计工作底稿</Link>
+        </Button>
+      </Col>
+    </Row>
+    <Row>
+      <Col span={24}>
+        <CheckTable data={data} />
+      </Col>
+    </Row>
   </div>
 );

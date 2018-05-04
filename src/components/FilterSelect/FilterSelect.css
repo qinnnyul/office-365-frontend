@@ -1,0 +1,8 @@
+.filter-select {
+  display: inline-block;
+  margin: 0 30px 30px 0;
+}
+
+.filter-select label {
+  display: block;
+}
