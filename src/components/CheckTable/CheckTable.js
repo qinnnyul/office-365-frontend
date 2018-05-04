@@ -1,5 +1,6 @@
 import React from 'react';
 import { Table } from 'antd';
+import { Link } from 'react-router-dom';
 
 const columns = [
   {
@@ -15,7 +16,7 @@ const columns = [
   {
     title: '审计工作底稿名称',
     dataIndex: 'name',
-    key: 'name',
+    render: name => <Link to="/edit">{name}</Link>,
   },
   {
     title: '审计人员',
